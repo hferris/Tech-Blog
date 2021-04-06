@@ -3,9 +3,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Dish extends Model { }
+class Comment extends Model { }
 
-Dish.init(
+Comment.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -13,7 +13,7 @@ Dish.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    dish_name: {
+    comment_text: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -33,8 +33,8 @@ Dish.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'dish',
+    modelName: 'comment',
   }
 );
 
-module.exports = Dish;
+module.exports = Comment;
