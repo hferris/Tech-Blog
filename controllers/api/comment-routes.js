@@ -1,5 +1,4 @@
 const router = require("express").Router();
-const { post } = require("../home-Routes");
 const { Comment } = require("../models");
 const withAuth = require("../utils/auth");
 
@@ -67,7 +66,7 @@ router.post('/', withAuth, async (req, res) => {
   router.delete('/:id', withAuth, async (req,res)=>{
       // delete a comment by its `id` value
   try {
-    const commData = await Category.destroy({
+    const commData = await Comment.destroy({
       where: {
         id: req.params.id
       }

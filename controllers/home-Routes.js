@@ -1,15 +1,17 @@
 const router = require('express').Router();
-const { User } = require('../models');
+const {User, Comment, Post} = require('../models');
 const withAuth = require('../utils/auth');
+const sequelize=require('../config/connection');
+
 
 router.get('/', withAuth, async (req, res) => {
   try {
-    const userData = await User.findAll({
-      attributes: { exclude: ['password'] },
-      order: [['name', 'ASC']],
+    const postData = await Post.findAll({
+      attributes: ['id', 'title','textSpot'],
+      include: [{ model: comment }]
     });
 
-    const users = userData.map((project) => project.get({ plain: true }));
+    const posts = postData.map((project) => project.get({ plain: true }));
 
     res.render('homepage', {
       users,
