@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-// Import express-session
+
 const session = require('express-session');
 const exphbs = require('express-handlebars');
 
@@ -11,14 +11,13 @@ const helpers = require('./utils/helpers');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Set up sessions
-const sess = {
+const sessions = {
   secret: 'Super secret secret',
   resave: false,
   saveUninitialized: true,
 };
 
-app.use(session(sess));
+app.use(session(sessions));
 
 const hbs = exphbs.create({ helpers });
 

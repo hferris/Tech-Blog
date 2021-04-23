@@ -1,5 +1,3 @@
-// Here is where we set up our Dish model, for when we are ready to connect to a database in future activities. 
-
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
@@ -13,23 +11,27 @@ Comment.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    comment_text: {
+    comment: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.TEXT,
-      allowNull: true,
-    },
-    guest_name: {
+    userid: {
       type: DataTypes.STRING,
       allowNull: false,
+      references: {
+        model: 'user', 
+        key: 'id'
+      }
     },
-    has_nuts: {
-      type: DataTypes.BOOLEAN,
+    postid: {
+      type: DataTypes.INTEGER, 
+      allowNull: false,
+      references: {
+          model: 'post', 
+          key: 'id'
     },
   },
-  {
+  
     sequelize,
     freezeTableName: true,
     underscored: true,
@@ -37,4 +39,5 @@ Comment.init(
   }
 );
 
-module.exports = Comment;
+
+module.exports = Comment
