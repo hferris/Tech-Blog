@@ -1,6 +1,8 @@
 const { Comment } = require('../models');
 
 const commData = [
+
+    //comments examples (to make self feel better :))
     {
         Comment: "I think I'm losing my mind b/c of this App",
         post_id: 0,
