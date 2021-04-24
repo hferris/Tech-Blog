@@ -1,7 +1,8 @@
 # Tech Blog
 # Here is the screenshot below :star_struck:
-![Alt text](/./assets/imgs/snap-shot.png?raw=true "Screenshot")
-# Check it out here: Heroku link here
+![Alt text](/./assets/imgs/ScreenShot.png?raw=true "Screenshot")
+[Alt text](/./assets/imgs/ScreenShot2.png?raw=true "Screenshot")
+# Check it out here: https://tech-b.herokuapp.com/login
 
 <img src="https://img.shields.io/badge/License-IPL%201.0-blue.svg"></img>
 
