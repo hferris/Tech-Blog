@@ -1,17 +1,2 @@
-* nav {
-    padding: 10px;
-    line-height: 1.25;
-    float: top;
-}
-.projectTitle {
-    font-size: 3rem;
-    background-color: var(--primary);
-    color: var(--dark);
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-    align-content: center;
-    border-radius: var(--border-radius);
-    box-shadow: 6px 5px var(--light-dark);
-}
+
 
