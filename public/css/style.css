@@ -1,7 +1,7 @@
 .blogTitle{
     font-size: 4rem;
     background-color: #ECA1A6;
-    height: 400px;
+    height: 200px;
     box-shadow: 6px 5px rgb(87, 86, 86); 
 }
 
@@ -14,4 +14,10 @@ color: #123614;
 .card{
 background-color: #b63593;
 
+}
+
+.form-group{
+ border-radius: 25px;  
+ border: 2px solid black;
+ margin: 0 0 20px 0; 
 }
