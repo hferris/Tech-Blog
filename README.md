@@ -1,6 +1,7 @@
 # Tech Blog
 # Here is the screenshot below :star_struck:
 ![Alt text](/./assets/imgs/ScreenShot.png?raw=true "Screenshot")
+
 [Alt text](/./assets/imgs/ScreenShot2.png?raw=true "Screenshot")
 # Check it out here: https://tech-b.herokuapp.com/login
 
