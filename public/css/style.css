@@ -2,6 +2,7 @@
     font-size: 4rem;
     background-color: #ECA1A6;
     height: 200px;
+    margin-top: 30px;
     box-shadow: 6px 5px rgb(87, 86, 86); 
 }
 
@@ -20,4 +21,6 @@ background-color: #b63593;
  border-radius: 25px;  
  border: 2px solid black;
  margin: 0 0 20px 0; 
+ text-align: center;
+ align-content: center;
 }
